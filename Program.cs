@@ -115,8 +115,17 @@ IEnumerable<int> scoreQuery = // Query variable
     orderby score descending // optional
     select score; //must end with select or group
 
+
 //Execute the query to produce the results
 foreach (int testScore in scoreQuery)
+{
+    Console.WriteLine(testScore);
+}
+
+Console.WriteLine("==== LINQ Method Syntax");
+var scoreQuery2 = scores.Where(s => s > 80).OrderByDescending(s => s);
+
+foreach (int testScore in scoreQuery2)
 {
     Console.WriteLine(testScore);
 }
