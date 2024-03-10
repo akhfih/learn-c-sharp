@@ -106,7 +106,7 @@ while(counter2 < 5); */
 //     Console.WriteLine(i + " ");
 // }
 
-int[] scores = {90,71,82,93,75,82};
+/* int[] scores = {90,71,82,93,75,82};
 
 //Query Expression.
 IEnumerable<int> scoreQuery = // Query variable
@@ -128,4 +128,17 @@ var scoreQuery2 = scores.Where(s => s > 80).OrderByDescending(s => s);
 foreach (int testScore in scoreQuery2)
 {
     Console.WriteLine(testScore);
+} */
+
+var p1 = new Person("Scott","Hanselman",new DateOnly(1970,1,1));
+var p2 = new Person("David","Fowler",new DateOnly(1986,1,1));
+
+List<Person> people = [p1,p2];
+
+Console.WriteLine(people.Count);
+public class Person(string firstname, string lastname, DateOnly birthday)
+{
+    public string First {get;} = firstname;
+    public string Last {get;} = lastname;
+    public DateOnly Birthday {get;} = birthday;
 }
