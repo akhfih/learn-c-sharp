@@ -88,8 +88,20 @@ while(counter2 < 5); */
 
 //Sorting
 
-var numbers = new List<int> {45,56,99,48,67,78};
+// var numbers = new List<int> {45,56,99,48,67,78};
 
-Console.WriteLine($"I found 99 at index {numbers.IndexOf(99)}");
-numbers.Sort();
-Console.WriteLine($"I found 99 at index {numbers.IndexOf(99)}");
+// Console.WriteLine($"I found 99 at index {numbers.IndexOf(99)}");
+// numbers.Sort();
+// Console.WriteLine($"I found 99 at index {numbers.IndexOf(99)}");
+
+List<int> scores = [97, 92, 81, 60];
+
+IEnumerable<int> scoreQuery =
+    from score in scores
+    where score > 80
+    select score;
+
+foreach(int i in scoreQuery)
+{
+    Console.WriteLine(i + " ");
+}
