@@ -29,16 +29,31 @@ decimal e = 38.2M;
 decimal f = d + e;
 Console.WriteLine($"The answer is {f}"); */
 
-int a = 5;
-int b = 6;
-int c = 4;
+// int a = 5;
+// int b = 6;
+// int c = 4;
 
-if((a + b + c > 10) && (a == b)){
-    Console.WriteLine("The answer is greater than 10.");
-    Console.WriteLine("And the first number is equal to the second");
-}
-else
+// if((a + b + c > 10) && (a == b)){
+//     Console.WriteLine("The answer is greater than 10.");
+//     Console.WriteLine("And the first number is equal to the second");
+// }
+// else
+// {
+//     Console.WriteLine("The answer is not greater than 10");
+//     Console.WriteLine("Or the first number is not equal to second");
+// }
+
+int counter = 0;
+while(counter < 5)
 {
-    Console.WriteLine("The answer is not greater than 10");
-    Console.WriteLine("Or the first number is not equal to second");
+    Console.WriteLine(counter);
+    counter++;
 }
+
+int counter2 = 0;
+do
+{
+    Console.WriteLine(counter2);
+    counter2++;
+}
+while(counter2 < 5);
