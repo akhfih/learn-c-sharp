@@ -43,7 +43,7 @@ Console.WriteLine($"The answer is {f}"); */
 //     Console.WriteLine("Or the first number is not equal to second");
 // }
 
-int counter = 0;
+/* int counter = 0;
 while(counter < 5)
 {
     Console.WriteLine(counter);
@@ -56,4 +56,13 @@ do
     Console.WriteLine(counter2);
     counter2++;
 }
-while(counter2 < 5);
+while(counter2 < 5); */
+
+
+for (int i= 0; i < 5; i++){
+    if(i ==3)
+    {
+        Console.WriteLine(i);
+    }
+}
+
