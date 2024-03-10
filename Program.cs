@@ -66,14 +66,23 @@ while(counter2 < 5); */
 //     }
 // }
 
-var names = new List<string> { "Scott", "Ana", "Felipe"};
+//list
+// var names = new List<string> { "Scott", "Ana", "Felipe"};
 
-names.Add("David");
-names.Add("Damian");
-names.Add("Maria");
+// names.Add("David");
+// names.Add("Damian");
+// names.Add("Maria");
 
-foreach (var name in names)
-{
-    Console.WriteLine($"Hello {name.ToUpper()}!");
-}
+// foreach (var name in names[2..4])
+// {
+//     Console.WriteLine($"Hello {name.ToUpper()}!");
+// }
+
+// Console.WriteLine(names[0]);
+// Console.WriteLine(names[^2]);
+
+//Array
+//array lengt is fix
+var names = new String[] { "Scott", "Ana", "Felipe"};
+names = [..names,"Damina"];
 
