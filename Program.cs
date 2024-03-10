@@ -94,14 +94,29 @@ while(counter2 < 5); */
 // numbers.Sort();
 // Console.WriteLine($"I found 99 at index {numbers.IndexOf(99)}");
 
-List<int> scores = [97, 92, 81, 60];
+// List<int> scores = [97, 92, 81, 60];
 
-IEnumerable<int> scoreQuery =
-    from score in scores
-    where score > 80
-    select score;
+// IEnumerable<int> scoreQuery =
+//     from score in scores
+//     where score > 80
+//     select score;
 
-foreach(int i in scoreQuery)
+// foreach(int i in scoreQuery)
+// {
+//     Console.WriteLine(i + " ");
+// }
+
+int[] scores = {90,71,82,93,75,82};
+
+//Query Expression.
+IEnumerable<int> scoreQuery = // Query variable
+    from score in scores //required
+    where score > 80 //optional
+    orderby score descending // optional
+    select score; //must end with select or group
+
+//Execute the query to produce the results
+foreach (int testScore in scoreQuery)
 {
-    Console.WriteLine(i + " ");
+    Console.WriteLine(testScore);
 }
