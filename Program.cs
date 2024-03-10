@@ -59,10 +59,21 @@ do
 while(counter2 < 5); */
 
 
-for (int i= 0; i < 5; i++){
-    if(i ==3)
-    {
-        Console.WriteLine(i);
-    }
+// for (int i= 0; i < 5; i++){
+//     if(i ==3)
+//     {
+//         Console.WriteLine(i);
+//     }
+// }
+
+var names = new List<string> { "Scott", "Ana", "Felipe"};
+
+names.Add("David");
+names.Add("Damian");
+names.Add("Maria");
+
+foreach (var name in names)
+{
+    Console.WriteLine($"Hello {name.ToUpper()}!");
 }
 
